@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор вартості продукту</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Калькулятор вартості продукту</h1>
+        <div class="cost-blocks">
+           
+            <div class="block components-block">
+                <h2>Компоненти продукту</h2>
+                <div class="buttons">
+                    <button id="addComponentButton">+</button>
+                    <button id="removeComponentButton">-</button>
+                </div>
+                
+                
+                <!-- Компоненти та їх собівартість -->
+                <div class="card">
+                    <div class="name">Компонент 1</div>
+                    <div class="details">
+                        <input type="number" placeholder="Ціна" name="componentPrice1">
+                        <input type="number" placeholder="Кількість частин" name="componentQuantity1">
+                    </div>
+                   
+                </div>
+                
+               
+                
+                <!-- Додаткові компоненти -->
+            </div>
+            <div class="block electricity-costs">
+                <h2>Електроенергія</h2>
+                <!-- Блок електроенергії -->
+                <div class="card">
+                    <input type="number" placeholder="Сума" name="electricityCost">
+                </div>
+            </div>
+            <div class="block wage-costs">
+                <h2>Зарплата</h2>
+                <!-- Блок зарплати -->
+                <div class="card">
+                    <input type="number" placeholder="Сума" name="wageCost">
+                </div>
+            </div>
+        </div>
+        <button type="submit">Розрахувати</button>
+    </div>
+    
+    
+</body>
+<script src="addCompound.js"></script>
+</html>

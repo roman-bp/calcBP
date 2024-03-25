@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e9eff1;
+    margin: 0;
+    padding: 20px;
+}
+
+.calculator {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.cost-blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: calc(33.333% - 45px);
+    min-width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Змінено на column для вертикального розташування */
+}
+
+ .card input[type="number"] {
+    width: 63px;
+    font-size: 14px;
+    color: #333;
+}
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px; /* Додає відступ між назвою та деталями */
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between; /* Елементи всередині розташовуються на всю ширину з відступами */
+    margin-bottom: 5px; /* При необхідності, додає невеликий відступ між рядами */
+}
+
+
+input[type="number"] {
+    width: calc(50% - 4px); /* Коригує ширину, враховуючи відступ */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ebedef;
+}
+
+button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center; /* Центрує кнопку в блоку */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Центрує кнопки горизонтально */
+    margin-bottom: 20px; /* Додає відступ знизу для відокремлення від інших елементів */
+}
+
+.buttons button {
+    margin: 0 5px; /* Додає невеликий відступ між кнопками */
+}
+.card input[type="text"], .card input[type="number"] {
+    width: calc(50% - 4px); /* Коригує ширину, враховуючи відступ */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ebedef;
+    margin-bottom: 10px; /* Додає відступ між полями */
+}
+.component-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.component-number {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.component-name {
+    flex-grow: 1; /* Займає доступне місце */
+}
